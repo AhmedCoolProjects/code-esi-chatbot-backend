@@ -7,8 +7,8 @@ import numpy as np
 from tensorflow.python.keras.models import load_model
 import os
 
-nltk.download('punkt')
-nltk.download('wordnet')
+# nltk.download('punkt')
+# nltk.download('wordnet')
 
 
 # ------ Constants ------
