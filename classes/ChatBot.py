@@ -9,13 +9,17 @@ import os
 
 # nltk.download('punkt')
 # nltk.download('wordnet')
+# nltk.download('omw-1.4')
 
 
 # ------ Constants ------
 lemmatizer = WordNetLemmatizer()
 MODEL_FILE = os.path.join(os.path.dirname(__file__), './model.h5')
+# MODEL_FILE = os.path.join(os.path.dirname(__file__), './model1.pkl')
+
 INTENTS_FILE = os.path.join(os.path.dirname(__file__), './intents.json')
 DONT_UNDERSTAND_RESPONSE = "I'm sorry, can you please rephrase your question?"
+# model = load_model(MODEL_FILE)
 model = load_model(MODEL_FILE)
 intents_json = json.load(open(INTENTS_FILE))
 # ------ Static Functions ------
